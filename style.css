@@ -3,3 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background: url('bg.jpg') no-repeat;
+    background-size: 100vw 100vh;
+}
