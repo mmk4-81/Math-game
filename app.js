@@ -6,4 +6,9 @@ const submitBtn = document.getElementById("submit-btn");
 const result = document.getElementById("result");
 const errorMessage = document.getElementById("error-msg");
 let answerValue;
-let operatorQuestuion;
+let operatorQuestion;
+
+//random value generator
+const randomValue = (min,max) =>{
+   Math.floor(Math.random()*(max-min)) + min;
+}
