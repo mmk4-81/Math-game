@@ -48,3 +48,7 @@ body{
     color: #d62f2f;
     padding: 0.2em 0;
 }
+
+.hide{
+    display: none;
+}
