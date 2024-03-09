@@ -26,3 +26,16 @@ body{
     font-weight: 500;
     line-height: 1.8em;
 }
+
+#submit-btn{
+    font-size: 1.2em;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    background-color: #5a5a5c;
+    border-radius: 0.3em;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 0.6em 2em;
+}
