@@ -84,3 +84,8 @@ body{
     border-color: #f4c531;
     outline: none;
 }
+
+/*hide number arrows*/
+.container input[type="number"]{
+    -moz-appearance: textfield;
+}

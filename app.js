@@ -52,11 +52,15 @@ const questionGenerator = ()=>{
 
     }
 
-    
+
 }
 
 //start game
 startBtn.addEventListener('click',()=>{
+    operatorQuestion = false;
+    answerValue ="";
+    errorMessage.innerHTML="";
+    errorMessage.classList.add("hide");
     questionGenerator();
 })
 
