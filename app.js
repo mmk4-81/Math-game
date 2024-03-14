@@ -61,8 +61,14 @@ const questionGenerator = ()=>{
             if(userInput==answerValue){
                 stopGame(`Yippie!! <span>Correctly</span>Answer`)
             }
+            //if user inputs operator other than + , - , *
             else if(operatorQuestion && !operators.includes(userInput)){
-                
+                errorMessage.classList.remove("hide");
+                errorMessage.innerHTML = "Please enter a valid operator";
+            }
+            //if user guessed wrong answer 
+            else{
+                stopGame(`opps!!<span>wrong</span>Answer`);
             }
         }
         //if user input is empty
