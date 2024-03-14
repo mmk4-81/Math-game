@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    background: url('bg.jpg') no-repeat;
-    background-size: 100vw 100vh;
+    /* background: url('bg.jpg') no-repeat;
+    background-size: 100vw 100vh; */
+    background-color: #f4c531;
 }
 .container{
     background-color: #fff;
@@ -53,7 +54,7 @@ body{
     display: none;
 }
 
-.container #question{
+.container #questions{
     background-color: #fff;
     font-size: 2em;
     font-weight: 600;
@@ -77,4 +78,9 @@ body{
     background-color: transparent;
     border-bottom: 0.12em solid #23234c;
     margin: 0 0.25em;
+}
+
+.container input:focus{
+    border-color: #f4c531;
+    outline: none;
 }
