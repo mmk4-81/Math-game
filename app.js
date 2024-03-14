@@ -16,4 +16,9 @@ const randomValue = (min,max) =>{
 const questionGenerator = ()=>{
     //two random values between 1 and 20
     let [num1,num2] = [randomValue(1,20) , randomValue(1,20)];
+
+    //for  getting random operator
+    let randomOperator = operators[Math.floor(Math.random() * operators.length)]
 }
+
+
