@@ -73,7 +73,8 @@ const questionGenerator = ()=>{
         }
         //if user input is empty
         else{
-
+            errorMessage.classList.remove("hide");
+            errorMessage.innerHTML = "Input Cannot Be Empty";
     }
     })
 }
