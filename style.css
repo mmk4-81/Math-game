@@ -52,3 +52,17 @@ body{
 .hide{
     display: none;
 }
+
+.container #question{
+    background-color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+    color: #23234c;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.4em 0 1em 0;
+    padding: 1em 0;
+}
+

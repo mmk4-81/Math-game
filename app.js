@@ -51,6 +51,8 @@ const questionGenerator = ()=>{
         question.innerHTML = `${num1}${randomOperator}${num2}  = <input type="number" id="inputValue" placeholder="?" \>`;
 
     }
+
+    
 }
 
 //start game
