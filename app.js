@@ -10,7 +10,7 @@ let operatorQuestion;
 
 //random value generator
 const randomValue = (min,max) =>{
-   Math.floor(Math.random()*(max-min)) + min;
+   return Math.floor(Math.random()*(max-min)) + min;
 }
 
 const questionGenerator = ()=>{
@@ -23,6 +23,10 @@ const questionGenerator = ()=>{
     if(randomOperator == "-" && num2 > num1){
         [num1,num2] = [num2,num1];
     }
+
+    //solve equation
+    let solution = eval(`${num1}${randomOperator}${num2}`);
+    // console.log(num1,randomOperator,num2,solution);
 }
 
 //start game
