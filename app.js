@@ -52,7 +52,24 @@ const questionGenerator = ()=>{
 
     }
 
-    
+    submitBtn.addEventListener('click',()=>{
+        errorMessage.classList("hide");
+        let userInput = document.getElementById('inputValue').ariaValueMax;
+        //if user input is not empty
+        if(userInput){
+            //if the user guessed correct answer
+            if(userInput==answerValue){
+                stopGame(`Yippie!! <span>Correctly</span>Answer`)
+            }
+            else if(operatorQuestion && !operators.includes(userInput)){
+                
+            }
+        }
+        //if user input is empty
+        else{
+
+    }
+    })
 }
 
 //start game
