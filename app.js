@@ -18,7 +18,16 @@ const questionGenerator = ()=>{
     let [num1,num2] = [randomValue(1,20) , randomValue(1,20)];
 
     //for  getting random operator
-    let randomOperator = operators[Math.floor(Math.random() * operators.length)]
+    let randomOperator = operators[Math.floor(Math.random() * operators.length)];
+
+    if(randomOperator == "-" && num2 > num1){
+        [num1,num2] = [num2,num1];
+    }
 }
+
+//start game
+startBtn.addEventListener('click',()=>{
+    questionGenerator();
+})
 
 
