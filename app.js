@@ -55,7 +55,6 @@ const questionGenerator = ()=>{
     submitBtn.addEventListener('click',()=>{
         errorMessage.classList.add("hide");
         let userInput = document.getElementById('inputValue').value;
-        console.log(userInput);
         //if user input is not empty
         if(userInput){
             //if the user guessed correct answer
