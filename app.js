@@ -44,7 +44,7 @@ const questionGenerator = ()=>{
     else if(radomVar == 3){
         answerValue = randomOperator;
         operatorQuestion = true;
-        question.innerHTML = `${num1}<input type="number" id="inputValue" placeholder="?" \>${num2}  = ${solution}`;
+        question.innerHTML = `${num1}<input type="text" id="inputValue" placeholder="?" \>${num2}  = ${solution}`;
     }
     else{
         answerValue = solution;
@@ -53,8 +53,9 @@ const questionGenerator = ()=>{
     }
 
     submitBtn.addEventListener('click',()=>{
-        errorMessage.classList("hide");
-        let userInput = document.getElementById('inputValue').ariaValueMax;
+        errorMessage.classList.add("hide");
+        let userInput = document.getElementById('inputValue').value;
+        console.log(userInput);
         //if user input is not empty
         if(userInput){
             //if the user guessed correct answer
