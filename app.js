@@ -52,7 +52,7 @@ const questionGenerator = ()=>{
 
     }
 
-
+    
 }
 
 //start game
@@ -65,3 +65,10 @@ startBtn.addEventListener('click',()=>{
 })
 
 
+//stop game
+const stopGame = (resultText) =>{
+    result.innerHTML = resultText;
+    startBtn.innerHTML = "restart";
+    // controls.classList.remove("hide");
+    // startBtn.classList.add("hide");
+}
